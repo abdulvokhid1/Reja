@@ -62,9 +62,48 @@
 
 // const os = require("os").cpus();
 // console.log(os.length);
-let count = 0;
-setInterval(() => {
-    count++;
-    console.log(count)
+// let count = 0;
+// setInterval(() => {
+//     count++;
+//     console.log(count)
 
-})
+// });
+
+
+//  Module Package File
+
+let calculate = require("./hisob.js");
+
+const result = calculate.kopaytirish(40, 50);
+console.log("result", result);
+
+const result2 = calculate.ayirish(70, 50);
+console.log("result", result2);
+
+const result3 = calculate.bolish(40, 20);
+console.log("result", result3);
+
+
+/* console.log(require("module").wrapper);
+[
+    '(function (exports, require, module, __filename, __dirname) { ',
+    '\n});'
+  ]
+bu holatda biz node.js ning togridan togri qanday syntax lari borligini korishimiz mumkin
+  */
+   
+
+
+const Account = require("./account.js");
+
+Account.tellMeAboutClass();
+Account.tellMeTime();
+
+console.log("===========");
+
+const myAccount = new Account("ALi", 2000000, 8973258725084936873);
+myAccount.giveMeDetails();
+
+myAccount.makeDeposit(7000);
+myAccount.withDrawMoney(2000000);
+myAccount.makeDeposit(650000);
