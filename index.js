@@ -42,23 +42,29 @@
 
 //
 
-const validator = require("validator");
-// const test = validator.isEmail("ibrakhimov7747a@gmail.com");
-const test = validator.isInt("100");
-console.log(test);
+// const validator = require("validator");
+// // const test = validator.isEmail("ibrakhimov7747a@gmail.com");
+// const test = validator.isInt("100");
+// console.log(test);
 
 
-// random string create qilib beradi
-const { v4: uuidv4 } = require("uuid");
-const random = uuidv4();
-console.log("random", random);
+// // random string create qilib beradi
+// const { v4: uuidv4 } = require("uuid");
+// const random = uuidv4();
+// console.log("random", random);
 
-// bizga terminalda boshqacha usulda log qlib berish imkonini beradi
+// // bizga terminalda boshqacha usulda log qlib berish imkonini beradi
 
-const chalk = require("chalk");
-const log = console.log;
-log(chalk.blue("Hello" + random + chalk.red("!")));
+// const chalk = require("chalk");
+// const log = console.log;
+// log(chalk.blue("Hello" + random + chalk.red("!")));
 
 
-const os = require("os").cpus();
-console.log(os.length);
+// const os = require("os").cpus();
+// console.log(os.length);
+let count = 0;
+setInterval(() => {
+    count++;
+    console.log(count)
+
+})
