@@ -6,7 +6,6 @@
 // number++;
 // }, 2000);
 
-
 // File System
 // const fs = require('fs');
 // const data = fs.readFileSync('./input.txt','utf8');
@@ -18,9 +17,6 @@
 // const new_data = fs.readFileSync('./input.txt','utf8');
 // console.log(new_data)
 
-
-
-
 //Module package EXTERNAL
 // xeternal modulllar ustanovka qilinishi shart boladi
 
@@ -29,8 +25,6 @@
 //     const time = moment().format();
 //     console.log(`hozirgi vaqt: ${time}`)
 // }, 5000)
-
-
 
 // const inquirer = require("inquirer")
 // inquirer
@@ -47,7 +41,6 @@
 // const test = validator.isInt("100");
 // console.log(test);
 
-
 // // random string create qilib beradi
 // const { v4: uuidv4 } = require("uuid");
 // const random = uuidv4();
@@ -59,7 +52,6 @@
 // const log = console.log;
 // log(chalk.blue("Hello" + random + chalk.red("!")));
 
-
 // const os = require("os").cpus();
 // console.log(os.length);
 // let count = 0;
@@ -69,20 +61,18 @@
 
 // });
 
-
 //  Module Package File
 
-let calculate = require("./hisob.js");
+// let calculate = require("./hisob.js");
 
-const result = calculate.kopaytirish(40, 50);
-console.log("result", result);
+// const result = calculate.kopaytirish(40, 50);
+// console.log("result", result);
 
-const result2 = calculate.ayirish(70, 50);
-console.log("result", result2);
+// const result2 = calculate.ayirish(70, 50);
+// console.log("result", result2);
 
-const result3 = calculate.bolish(40, 20);
-console.log("result", result3);
-
+// const result3 = calculate.bolish(40, 20);
+// console.log("result", result3);
 
 /* console.log(require("module").wrapper);
 [
@@ -91,19 +81,17 @@ console.log("result", result3);
   ]
 bu holatda biz node.js ning togridan togri qanday syntax lari borligini korishimiz mumkin
   */
-   
 
+// const Account = require("./account.js");
 
-const Account = require("./account.js");
+// Account.tellMeAboutClass();
+// Account.tellMeTime();
 
-Account.tellMeAboutClass();
-Account.tellMeTime();
+// console.log("===========");
 
-console.log("===========");
+// const myAccount = new Account("ALi", 2000000, 8973258725084936873);
+// myAccount.giveMeDetails();
 
-const myAccount = new Account("ALi", 2000000, 8973258725084936873);
-myAccount.giveMeDetails();
-
-myAccount.makeDeposit(7000);
-myAccount.withDrawMoney(2000000);
-myAccount.makeDeposit(650000);
+// myAccount.makeDeposit(7000);
+// myAccount.withDrawMoney(2000000);
+// myAccount.makeDeposit(650000);
