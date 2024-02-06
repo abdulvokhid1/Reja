@@ -20,11 +20,12 @@ app.set("view engine", "ejs");
 
 //4 => bu routerlarga moljallangan
 
-app.get("/hello", function (req, res) {
-  res.end("<h1>Hello World by ALi</h1>");
+app.get("/", function (req, res) {
+  res.render("harid.ejs");
 });
-app.get("/gift", function (req, res) {
-  res.end("<h1>You are in gift page</h1>");
+app.post("/create-item", (req, res) => {
+  console.log(req.body);
+  res.json({ test: "success" });
 });
 
 const server = http.createServer(app);
