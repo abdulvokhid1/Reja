@@ -1,0 +1,17 @@
+{
+    "name": "Steve",
+    "profession": "Software Engineer",
+    "age": "20",
+    "residence": "South Korea",
+    "address": "S.Korea, Gwangju",
+    "language": ["Uzbek", "Korean", "English"],
+    "skills": ["Html","CSS","JS","NodeJs","Python"],
+    "extra_skills": ["Bootstrap", "Materialize", "Styling"],
+    "work_place": "IT Company",
+    "service_desk": "Amet minim mollit non deseraunt ullamco ets sit alique",
+    "about_me": "LOrem iopsum dolor sit amet",
+    "city": "Denau",
+    "title": ["Flower","Seedlings","Gardner", "Old"]
+
+
+}
