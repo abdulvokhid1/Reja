@@ -1,17 +1,17 @@
 {
     "name": "Steve",
     "profession": "Software Engineer",
-    "age": "20",
+    "age": "25",
     "residence": "South Korea",
     "address": "S.Korea, Gwangju",
     "language": ["Uzbek", "Korean", "English"],
     "skills": ["Html","CSS","JS","NodeJs","Python"],
-    "extra_skills": ["Bootstrap", "Materialize", "Styling"],
+    "extra_skills": ["Bootstrap", "Materialize", "Styling","Sass", "Django","Git Knowledge","Stylus","Less"],
     "work_place": "IT Company",
-    "service_desk": "Amet minim mollit non deseraunt ullamco ets sit alique",
-    "about_me": "LOrem iopsum dolor sit amet",
+    "service_desk": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
+    "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.",
     "city": "Denau",
-    "title": ["Flower","Seedlings","Gardner", "Old"]
+    "title": ["Flower","Seedlings","Gardner", "Old", "New"]
 
 
 }

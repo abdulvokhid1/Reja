@@ -1,5 +1,6 @@
 console.log("Web Servernin Boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -29,6 +30,9 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 //4 => bu routerlarga moljallangan
+app.get("/", (req, res) => {
+  res.end("Hello friend");
+});
 
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
