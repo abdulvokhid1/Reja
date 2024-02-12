@@ -31,7 +31,7 @@ app.set("view engine", "ejs");
 
 //4 => bu routerlarga moljallangan
 app.get("/", (req, res) => {
-  res.end("Hello friend");
+  res.render("reja");
 });
 
 app.get("/author", (req, res) => {
@@ -46,5 +46,7 @@ app.post("/create-item", (req, res) => {
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-  console.log(`This server is running succesfully on port:${PORT}`);
+  console.log(
+    `This server is running succesfully on port:${PORT} http://localhost${PORT}:`
+  );
 });

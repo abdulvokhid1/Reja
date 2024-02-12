@@ -42,11 +42,11 @@ async function giveAdvice(a) {
   else {
     // bu holatda promise bilan setinterval bir marta ishlaydi yana har bir biz kirtgan vatqda resultni olib kelmay faqat bir marta olib keladi
     // agarda biz shu holatda call back da yozganimizda qachonki result kelsa osha resultni biz kirtigan vaqtda olaverardi
-    return new Promise((resolve, reject) => {
-      setInterval(() => {
-        resolve(list[5]);
-      }, 1000);
-    });
+    // return new Promise((resolve, reject) => {
+    //   setInterval(() => {
+    //     resolve(list[5]);
+    //   }, 1000);
+    // });
   }
   //   setTimeout(() => {
 
