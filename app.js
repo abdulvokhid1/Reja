@@ -20,7 +20,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 
 // 4 bosqichga bolinadi
 
-//1 => express ga kiirb kelyotgan malumotlarga bogliq bolgan kodlar yoziladi
+//1 => express ga kiirb kelyotgan malumotlarga bogliq bolgan kodlar yoz iladi
 // bu har qanday broweserdan kirib kelyotgan zaproslar uchun public folder ochiq degan manoni bildiradi
 app.use(express.static("public"));
 app.use(express.json()); // bu kiirb keyotgan jason formatdagi datani object holatga ogirib beradi
@@ -35,16 +35,11 @@ app.set("view engine", "ejs");
 
 //4 => bu routerlarga moljallangan
 app.post("/create-item", (req, res) => {
-  console.log("useer enterd /create-item");
+  console.log("useer enterd / create-item");
   console.log(req.body);
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
-    if (err) {
-      console.log(err);
-      res.end("something went wrong");
-    } else {
-      res.end("successfully added");
-    }
+    res.json(data.ops[0]);
   });
 });
 
