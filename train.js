@@ -10,7 +10,7 @@ function countDigits(str) {
 }
 console.log(countDigits("ojn1jbsidh8sjdfbj3bjkbdv9dijbcjrbt5"));
 
-// D-TASK:
+// C-TASK:
 class Shop {
   // constructor
   constructor(non, lagmon, cola) {
@@ -43,3 +43,17 @@ const shop = new Shop(4, 5, 2);
 shop.sotish("non", 3);
 shop.qabul("cola", 4);
 shop.qoldiq();
+
+// D TASK
+function checkContent(str1, str2) {
+  // harflar katta yoki kichikligini oldini olish uchun
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
+
+  var a = str1.split("").sort().join("");
+  var b = str2.split("").sort().join("");
+
+  return a === b;
+}
+
+console.log(checkContent("mitgroup", "gmtiprou"));

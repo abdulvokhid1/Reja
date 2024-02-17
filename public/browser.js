@@ -68,8 +68,8 @@ document.addEventListener("click", function (e) {
             ".item-text"
           ).innerHTML = userInput;
         })
-        .catch((err) => {
-          console.log(" please try again");
+        .catch(function (err) {
+          console.log("try again");
         });
     }
   }
