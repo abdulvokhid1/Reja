@@ -65,9 +65,6 @@
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
 function getReverse(str){
-  const splitStr = str.split("");
-  const reverArray = splitStr.reverse();
-  const result = reverArray.join( "")
-  return result
+  return str.split("").reverse().join("")
 };
 console.log(getReverse("hello"))
